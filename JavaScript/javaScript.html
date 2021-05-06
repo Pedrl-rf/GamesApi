@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+            function dividirCadena(cadenaADividir,separador) {
+                var arrayDeCadenas = cadenaADividir.split(separador);
+                var cadenados = arrayDeCadenas.reverse();
+                var reves = cadenados.split(separador);
+                var arrayDeCadenasReves = reves.split(separador);
+                document.write('<p>La cadena original es: "' + cadenaADividir + '"');
+                document.write('<br>El separador es: "' + separador + '"');
+                document.write("<br>El array tiene " + arrayDeCadenas.length + " elementos: ");
+                document.write("<br>El array al reves tiene " + arrayDeCadenasReves.length + " elementos: ");
+                for (var i=0; i < arrayDeCadenas.length; i++) {
+                    document.write(arrayDeCadenas[i] + " / ");
+                }
+                
+                document.write("<br>"+reves)
+                
+                for (var i = arrayDeCadenas.length ; i = 0; i--){
+                    var uno = 0;
+                    if (arrayDeCadenas[i] == arrayDeCadenasReves[uno]){
+                        document.write("<br>"+ "<p> es polidremo </p>");
+                    }else{
+                        document.write("<br>"+ "<p>  no es polidremo </p>");    
+                    }
+                    uno++;
+                }
+            }
+        var cadenaVerso = prompt("Introduce la frase");
+        var espacio = " ";
+        dividirCadena(cadenaVerso, espacio);
+    </script>
+
+</body>
+</html>

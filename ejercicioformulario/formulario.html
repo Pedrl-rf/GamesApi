@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label for="Nombre">Nombre*</label>
+                <input type="text" name="Nombre" placeholder="Nombre" id="Nombre" autofocus>
+                <label for="Apellidos*">Apellidos*</label>
+                <input type="text" name="Apellidos" placeholder="Apellidos">
+                <br>
+                <label for="Sexo" style="margin-right: 2%;">Sexo</label>
+                <label for="Sexo">Hombre</label>
+                <input type="radio" name="Sexo" value="hombre"  />
+                <label for="sexo">Mujer</label>
+                <input type="radio" name="Sexo" value="mujer" />
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Email">
+                <label for="direccion">Direccion*</label>
+                <input type="text" id="direccion" placeholder="Direccion">
+                <label for="codigo_postal">Codigo Postal*</label>
+                <input type="text" id="codigo_postal">
+                <label for="ciudad">Ciudad</label>
+                <input type="text" id="ciudad">
+                <label for="provincia">Provincia</label>
+                <input type="text" id="provincia">
+                <label for="clave">Clave</label>
+                <input type="password" id="clave">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Reserva</legend>
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora">
+            <label for="tipo_habitacion">Habitacion</label>
+            <input list="tipo_habitacion" placeholder="Habitacion Doble"/>
+            <datalist id="tipo_habitacion">
+            <option value="Individual">
+            <option value="Matrimonio">
+            <option value="Habitacion Doble">
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <label for="frutos_secos">Frustos Secos</label>
+            <select multiple>
+                <option value="Cerezas">Cerezas</option>
+                <option value="Fresas">Fresas</option>
+                <option value="Melocotones">Melocotones</option>
+            </select>
+            <label for="refrescos">Refrescos</label>
+            <input type="text" placeholder="12" id="refrescos">
+            <label for="ingredientes">ingredientes:</label>
+            <input type="checkbox" id="ingredientes">Champiñion</input>
+            <input type="checkbox" id="ingredientes">Extra de queso</input>
+            <label for="color">Color</label>
+            <input type="color" name="miColor" id="color"/>
+            <br>
+            <label for="sugerencias">Sugerencias</label>
+            <br>
+            <textarea id="sugerencias"></textarea>    
+        </fieldset>
+
+        <fieldset>
+            <legend>Varios</legend>
+            <label for="archivo">Elegir Archivo</label>
+            <input  multiple type="file" id="archivo">
+            <label for="Curriculum">Curriculum</label>
+            <input type="file" id="Curriculum">
+            <label for="enviar_datos">Enviar formulario</label>
+            <br>
+            <input type="submit" id="enviar_datos">
+            <label for="borrar_form"></label>
+            <input type="reset" id="borrar_form">
+        </fieldset>
+    </form>
+</body>
+</html>

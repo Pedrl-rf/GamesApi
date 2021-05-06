@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <label>1º numero</label><input type="number" id="input">
+    <br>
+    <label>2º numero</label><input type="number" id="inputdos">
+    <br>
+    <button id="multiplicar">*</button>
+
+    <button id="dividir">/</button>
+
+    <button id="sumar">+</button>
+
+    <button id="restar">-</button>
+    <p id="resultado"></p>
+
+    <script>
+$(document).ready(function(){
+        $("#sumar").click(function(){
+            var inputuno = $("#input").val();
+            var inputdos = +$("#inputdos").val();
+
+            var resultado = parseFloat(inputuno) + parseFloat(inputdos);
+            
+            $("#resultado").text(resultado);    
+        });
+
+        $("#restar").click(function(){
+            var inputuno = $("#input").val();
+            var inputdos = +$("#inputdos").val();
+
+            var resultado = parseFloat(inputuno) - parseFloat(inputdos);
+            
+            $("#resultado").text(resultado);    
+        });
+
+        $("#multiplicar").click(function(){
+            var inputuno = $("#input").val();
+            var inputdos = +$("#inputdos").val();
+
+            var resultado = parseFloat(inputuno) * parseFloat(inputdos);
+            
+            $("#resultado").text(resultado);    
+        });
+
+        $("#dividir").click(function(){
+            var inputuno = $("#input").val();
+            var inputdos = +$("#inputdos").val();
+
+            var resultado = parseFloat(inputuno) / parseFloat(inputdos);
+            
+            $("#resultado").text(resultado);    
+        });
+
+    });
+    </script>
+</body>
+</html>

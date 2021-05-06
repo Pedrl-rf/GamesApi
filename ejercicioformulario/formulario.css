@@ -1,0 +1,17 @@
+form{
+    padding: 1%;
+    border-radius:1%;
+    border: solid 1px;
+}
+fieldset{
+    padding: 1%;
+    margin: 1;
+}
+#sugerencias{
+    width: 80%;
+    height: 150px;
+    resize: none;
+}
+input:focus{
+    background-color: lightblue;
+}

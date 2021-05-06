@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FF5722">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondopastel"
+        android:foregroundTint="#FF5722"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_incial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.4dp"
+            android:text="GANA UN TELEFONO"
+            android:textColor="#412475" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15.4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellido" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15.4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tv_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Edad"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_participado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.4dp"
+            android:text="¿HAS PARTICIPADO ANTES?"
+            android:textColor="#412475" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15.4dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:text="SI" />
+
+            <Button
+                android:id="@+id/bt_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:text="NO" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.4dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_empresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="NOMBRE DE LA EMPRESA" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tv_nombreConcurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="NOMBRE CONCURSO" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sexo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15.4dp"
+            android:text="¿Mayor de Edad?"
+            android:textColor="#412475" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15.4dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb_hombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HOMBRE" />
+
+                <RadioButton
+                    android:id="@+id/rb_mujer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mujer" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15.4dp"
+            android:backgroundTint="#FF9800"
+            android:text="ENVIAR DATOS" />
+    </LinearLayout>
+</ScrollView>

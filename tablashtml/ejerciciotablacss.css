@@ -1,0 +1,26 @@
+table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 50%;
+}
+#cabecera{
+    background-color: black;
+    color: white;
+    border:black;
+    text-align: center;
+}
+td,th{
+    padding: 2%;    
+}
+tr{
+    border-bottom: 1px solid;
+}
+tr:nth-child(odd){
+    background-color: rgba(229, 226, 226, 0.904);
+}
+td:last-child{
+    text-align: right;
+}
+tr:hover{
+    background-color: #ccc
+}
